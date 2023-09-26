@@ -83,28 +83,27 @@ body {
 
 /*Version 3*/
 
-.redimation {
+.redimation,
+.yellowmation,
+.greenimation {
   opacity: 20%;
-  animation-name: pulsing-red;
-  animation-duration: 7s;
-  animation-delay: 6s;
+  animation-duration: 9s;
   animation-iteration-count: infinite;
+}
+
+.redimation {
+  animation-name: pulsing-red;
+  animation-delay: 0s;
 }
 
 .yellowmation {
-  opacity: 20%;
   animation-name: pulsing-yellow;
-  animation-duration: 7s;
-  animation-delay: 4s;
-  animation-iteration-count: infinite;
+  animation-delay: 3s;
 }
 
 .greenimation {
-  opacity: 20%;
   animation-name: pulsing-green;
-  animation-duration: 7s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
+  animation-delay: 6s;
 }
 
 @keyframes pulsing-red {
@@ -113,6 +112,9 @@ body {
   }
   50% {
     opacity: 100%;
+  }
+  75% {
+    opacity: 20%;
   }
   100% {
     opacity: 20%;
@@ -123,6 +125,9 @@ body {
     opacity: 20%;
   }
   50% {
+    opacity: 20%;
+  }
+  75% {
     opacity: 100%;
   }
   100% {
@@ -131,12 +136,15 @@ body {
 }
 @keyframes pulsing-green {
   0% {
-    opacity: 20%;
-  }
-  50% {
     opacity: 100%;
   }
-  100% {
+  50% {
     opacity: 20%;
+  }
+  75% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
