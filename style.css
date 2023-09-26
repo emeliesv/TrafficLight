@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: rgb(48, 43, 43);
   width: 200px;
   height: 550px;
   display: flex;
@@ -35,7 +35,7 @@ body {
 }
 
 .green {
-  background-color: green;
+  background-color: rgb(7, 179, 7);
   border: 10px solid darkgreen;
 }
 
@@ -79,4 +79,64 @@ body {
 .blang:hover {
   background-color: rgb(89, 187, 9);
   transition: 1s ease-in;
+}
+
+/*Version 3*/
+
+.redimation {
+  opacity: 20%;
+  animation-name: pulsing-red;
+  animation-duration: 7s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+}
+
+.yellowmation {
+  opacity: 20%;
+  animation-name: pulsing-yellow;
+  animation-duration: 7s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.greenimation {
+  opacity: 20%;
+  animation-name: pulsing-green;
+  animation-duration: 7s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulsing-red {
+  0% {
+    opacity: 20%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 20%;
+  }
+}
+@keyframes pulsing-yellow {
+  0% {
+    opacity: 20%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 20%;
+  }
+}
+@keyframes pulsing-green {
+  0% {
+    opacity: 20%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 20%;
+  }
 }
