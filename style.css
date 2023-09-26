@@ -65,3 +65,18 @@ body {
   position: relative;
   top: 50%;
 }
+
+.bling:hover {
+  background-color: rgb(237, 114, 114);
+  transition: 1s ease-in;
+}
+
+.blong:hover {
+  background-color: rgb(255, 196, 0);
+  transition: 1s ease-in;
+}
+
+.blang:hover {
+  background-color: rgb(89, 187, 9);
+  transition: 1s ease-in;
+}
